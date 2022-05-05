@@ -20,7 +20,7 @@ tags:
 pnt를 계속 증가시키면서 찾기 때문에 $ O(N) $이다.
 
 <코드>
-```cpp
+``` c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -50,7 +50,7 @@ int main() {
 여기서 배열 a[i]는 T의 i-1번째 문자까지 같은 문자열의 개수이다.  
 
 <코드>
-```cpp
+``` c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -87,7 +87,7 @@ map을 이용해 sum[i] = sum[j]가 되는지 (i~j까지 SKK 문자열인지) $ 
 즉, 전체 시간복잡도는 $ O(N \log N) $이다.
 
 <코드>
-``` cpp
+``` c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -133,7 +133,7 @@ DFS 역방향 간선이 있을 경우 역방향 간선을 포함하는 노드들
 그 후 큐에 넣은 노드들을 출발점으로 해 backedge를 써서 BFS로 탐색하면 $ O(V+E) $ 로 풀 수 있다.
 
 <코드>
-```cpp
+``` c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -206,7 +206,7 @@ WA를 받은 이유는 구슬의 시작점과 끝점을 판단하는 코드가 �
 만약 두 쿼리가 섞여서 나왔다면 정해는 Lazy Segtree일 것이다.  
 
 <코드>
-```cpp
+``` c++
 #include <bits/stdc++.h>
 using namespace std;
 
