@@ -19,7 +19,8 @@ tags:
 투포인터 느낌으로 풀었다.  
 pnt를 계속 증가시키면서 찾기 때문에 $ O(N) $이다.
 
-<코드>
+<코드>  
+
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -49,7 +50,8 @@ int main() {
 아래 풀이는 $ O(\lvert S \rvert \lvert T \rvert) $ 에 풀린다.  
 여기서 배열 a[i]는 T의 i-1번째 문자까지 같은 문자열의 개수이다.  
 
-<코드>
+<코드>  
+
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -86,7 +88,8 @@ K의 개수가 S의 개수의 2배여야 하므로 K를 1, S를 -2, 나머지를
 map을 이용해 sum[i] = sum[j]가 되는지 (i~j까지 SKK 문자열인지) $ O(\log N) $에 구현이 가능하다.  
 즉, 전체 시간복잡도는 $ O(N \log N) $이다.
 
-<코드>
+<코드>  
+
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -132,7 +135,8 @@ int main() {
 DFS 역방향 간선이 있을 경우 역방향 간선을 포함하는 노드들은 사이클을 구성하므로 큐에 넣는다.  
 그 후 큐에 넣은 노드들을 출발점으로 해 backedge를 써서 BFS로 탐색하면 $ O(V+E) $ 로 풀 수 있다.
 
-<코드>
+<코드>  
+
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -205,7 +209,8 @@ WA를 받은 이유는 구슬의 시작점과 끝점을 판단하는 코드가 �
 업데이트 쿼리가 모두 주어지고 기댓값을 묻는 쿼리가 주어지기 때문에 누적합으로 풀린다.  
 만약 두 쿼리가 섞여서 나왔다면 정해는 Lazy Segtree일 것이다.  
 
-<코드>
+<코드>  
+
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
