@@ -19,29 +19,6 @@ tags:
 투포인터 느낌으로 풀었다.  
 pnt를 계속 증가시키면서 찾기 때문에 $ O(N) $이다.
 
-<코드>  
-
-``` c++
-#include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-    ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
-    int n; cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++) cin >> arr[i];
-    int ans[n]; int pnt = 1;
-    for (int i = 0; i < n; i++) {
-        while (arr[i] == arr[pnt]) pnt++;
-        ans[i] = pnt;
-    }
-    // ans[i] 입력이 없을 때 -2로 초기화해 -1을 출력하도록 설정  
-    for (int i = 0; i < n; i++) {
-        if (n <= ans[i]) ans[i] = -2; 
-    }
-    for (int i = 0; i < n; i++) cout << ans[i]+1 << ' ';
-}
-```
 
 ### B. 아름다운 문자열 [(백준 24524)](https://www.acmicpc.net/problem/24524) (AC/+11min)  
 
