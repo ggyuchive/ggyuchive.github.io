@@ -13,7 +13,6 @@ tags:
 ![image](https://i.imgur.com/0c3hYlg.jpeg)
 
 문제 세트는 [여기](https://www.acmicpc.net/category/detail/3031)서 확인할 수 있다.  
-<br>
 
 ### A. 내 뒤에 나와 다른 수 [(백준 24523)](https://www.acmicpc.net/problem/24523) (AC/+4min)  
 
@@ -42,7 +41,6 @@ int main() {
     for (int i = 0; i < n; i++) cout << ans[i]+1 << ' ';
 }
 ```
-<br>
 
 ### B. 아름다운 문자열 [(백준 24524)](https://www.acmicpc.net/problem/24524) (AC/+11min)  
 
@@ -78,7 +76,6 @@ int main() {
     cout << dp[m];
 }
 ```
-<br>
 
 ### C. SKK 문자열 [(백준 24525)](https://www.acmicpc.net/problem/24525) (WA)  
 
@@ -126,7 +123,6 @@ int main() {
     cout << ans;
 } 
 ```
-<br>
 
 ### D. 전화 돌리기 [(백준 24526)](https://www.acmicpc.net/problem/24526) (AC/+242min)  
 
@@ -199,7 +195,6 @@ int main() {
     } cout << ans;
 } 
 ```
-<br>
 
 ### E. 이상한 나라의 갈톤보드 [(백준 24527)](https://www.acmicpc.net/problem/24527) (WA)  
 
