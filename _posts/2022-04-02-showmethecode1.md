@@ -25,7 +25,7 @@ next_permutation은 코딩테스트의 순열문제에서 쓸 일이 많으니 �
 <details>
     <summary> 소스 코드 </summary>
     
-``` c++
+~~~ c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -64,7 +64,7 @@ int main() {
     } while (next_permutation(perm.begin(), perm.end()));
     cout << ans;
 }
-```
+~~~
 </details>
 
 * * *
@@ -79,7 +79,7 @@ long long int의 최댓값은 9,223,372,036,854,775,807으로, 범위를 넘어�
 <details>
     <summary> 소스 코드 </summary>
     
-``` c++
+~~~ c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -132,7 +132,7 @@ int main() {
         else cout << ans << '\n';
     }
 }
-```
+~~~
 </details>
 
 * * *
@@ -149,7 +149,7 @@ $ P_{i} = 2^i-i-1 $ , $ P_{i+1} = 2 \times P_{i} + i $ 이다.
 <details>
     <summary> 소스 코드 </summary>
     
-```c++
+~~~c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -187,5 +187,5 @@ int main() {
     }
     cout << ans;
 }
-```
+~~~
 </details>

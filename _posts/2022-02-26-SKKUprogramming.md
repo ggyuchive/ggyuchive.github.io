@@ -23,7 +23,7 @@ tags:
 <details>
     <summary> 소스 코드 </summary>
     
-``` c++
+~~~ c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -43,7 +43,7 @@ int main() {
     }
     for (int i = 0; i < n; i++) cout << ans[i]+1 << ' ';
 }
-```
+~~~
 </details>
     
 * * *
@@ -56,7 +56,7 @@ int main() {
 <details>
     <summary> 소스 코드 </summary>
     
-``` c++
+~~~ c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -81,7 +81,7 @@ int main() {
     }
     cout << dp[m];
 }
-```
+~~~
 </details>
     
 * * *
@@ -96,7 +96,7 @@ K의 개수가 S의 개수의 2배여야 하므로 K를 1, S를 -2, 나머지를
 <details>
     <summary> 소스 코드 </summary>
     
-``` c++
+~~~ c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -131,7 +131,7 @@ int main() {
     }
     cout << ans;
 } 
-```
+~~~
 </details>
    
 * * *
@@ -147,7 +147,7 @@ DFS 역방향 간선이 있을 경우 역방향 간선을 포함하는 노드들
 <details>
     <summary> 소스 코드 </summary>
 
-``` c++
+~~~ c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -208,7 +208,7 @@ int main() {
         if (answer[i]) ans++;
     } cout << ans;
 } 
-```
+~~~
 </details>
     
 * * *
@@ -221,7 +221,7 @@ Lazy Segtree를 써야겠다는 생각으로 처음에 접근했다. WA를 받�
 <details>
     <summary> 소스 코드 </summary>
     
-``` c++
+~~~ c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -265,5 +265,5 @@ int main() {
         cout << ans << '\n';
     }
 } 
-```
+~~~
 </details>
