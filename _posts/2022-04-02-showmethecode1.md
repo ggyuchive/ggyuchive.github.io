@@ -22,6 +22,9 @@ c++에 있는 next_permutation()을 활용하면 쉽게 풀 수 있는 문제이
 시간복잡도는 $ O(N \times N!) $ 이고, $ N \leq 10 $ 이므로 연산 횟수는 약 3600만회이다.  
 next_permutation은 코딩테스트의 순열문제에서 쓸 일이 많으니 익혀두도록 하자 (직접 구현하려면 꽤 시간이 많이 든다.)
 
+<details>
+    <summary> 소스 코드 </summary>
+    
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -62,6 +65,9 @@ int main() {
     cout << ans;
 }
 ```
+</details>
+
+* * *
 
 ### B. 숫자 이어 붙이기 (AC/+42min)  
 트리에서 탐색을 하는 문제다. $ N \leq 1000 $, $ Q \leq 1000 $이므로 쉽게 풀 수 있다.  
@@ -69,6 +75,10 @@ int main() {
 한 가지 함정은 $ A_{i} \leq 10^9 $ 이고, 이어붙인 숫자의 최댓값은 10,000,000,001,000,000,000이다.  
 long long int의 최댓값은 9,223,372,036,854,775,807으로, 범위를 넘어선다. 그러므로 unsigned long long int를 써야 커버가 가능하다.
 
+    
+<details>
+    <summary> 소스 코드 </summary>
+    
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -123,6 +133,9 @@ int main() {
     }
 }
 ```
+</details>
+
+* * *
 
 ### C. 나는 정말 휘파람을 못 불어 (AC/+58min)
 보자마자 누적합을 써야 한다는 것을 알았다. H를 기준으로 왼쪽의 W 개수, 오른쪽의 E 개수를 계산해줘야 한다.  
@@ -132,6 +145,10 @@ $ P_{i} = 2^i-i-1 $ , $ P_{i+1} = 2 \times P_{i} + i $ 이다.
 즉 누적합으로 (1)구간의 W 개수, (2)구간의 E 개수를 전처리하고, DP로 (3)E 개수가 $ e $개일 때 $ 2^e-e-1 $ 값을 전처리한다.
 시간복잡도는 $ O(N) $이다.
 
+
+<details>
+    <summary> 소스 코드 </summary>
+    
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -171,3 +188,4 @@ int main() {
     cout << ans;
 }
 ```
+</details>
