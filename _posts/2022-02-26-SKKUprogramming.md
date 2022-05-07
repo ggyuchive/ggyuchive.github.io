@@ -20,6 +20,9 @@ tags:
 
 투포인터 느낌으로 풀었다. pnt를 계속 증가시키면서 찾기 때문에 $ O(N) $이다.
 
+<details>
+    <summary> 소스 코드 </summary>
+    
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -41,6 +44,8 @@ int main() {
     for (int i = 0; i < n; i++) cout << ans[i]+1 << ' ';
 }
 ```
+</details>
+    
 * * *
 
 ### B. 아름다운 문자열 [(백준 24524)](https://www.acmicpc.net/problem/24524) (AC/+11min)  
@@ -48,6 +53,9 @@ int main() {
 전형적인 그리디 문제이다. 문자열 T의 모든 문자가 다르다는 것이 포인트이다.  
 아래 풀이는 $ O(\lvert S \rvert \lvert T \rvert) $ 에 풀린다. 여기서 배열 a[i]는 T의 i-1번째 문자까지 같은 문자열의 개수이다.   
 
+<details>
+    <summary> 소스 코드 </summary>
+    
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -74,6 +82,8 @@ int main() {
     cout << dp[m];
 }
 ```
+</details>
+    
 * * *
 
 ### C. SKK 문자열 [(백준 24525)](https://www.acmicpc.net/problem/24525) (WA)  
@@ -83,6 +93,9 @@ K의 개수가 S의 개수의 2배여야 하므로 K를 1, S를 -2, 나머지를
 누적합이 0인 구간을 모두 파악하는 것도 naive하게 구현하면 $ O(N^2) $이 되는데, map을 이용해 sum[i] = sum[j]가 되는지 (i~j까지 SKK 문자열인지) $ O(\log N) $에 구현이 가능하다.  
 즉, 전체 시간복잡도는 $ O(N \log N) $이다. 
 
+<details>
+    <summary> 소스 코드 </summary>
+    
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -119,6 +132,8 @@ int main() {
     cout << ans;
 } 
 ```
+</details>
+   
 * * *
 
 ### D. 전화 돌리기 [(백준 24526)](https://www.acmicpc.net/problem/24526) (AC/+242min)  
@@ -128,6 +143,9 @@ int main() {
 다만 DFS 함수 안에서 사이클을 이루는 노드를 찾아버리면 그래프의 형태에 따라 **시간 초과**가 발생한다.
 DFS 역방향 간선이 있을 경우 역방향 간선을 포함하는 노드들은 사이클을 구성하므로 큐에 넣는다.
 그 후 큐에 넣은 노드들을 출발점으로 해 backedge를 써서 BFS로 탐색하면 $ O(V+E) $ 로 풀 수 있다.
+
+<details>
+    <summary> 소스 코드 </summary>
 
 ``` c++
 #include <bits/stdc++.h>
@@ -191,14 +209,18 @@ int main() {
     } cout << ans;
 } 
 ```
+</details>
+    
 * * *
 
 ### E. 이상한 나라의 갈톤보드 [(백준 24527)](https://www.acmicpc.net/problem/24527) (WA)  
 
-Lazy Segtree를 써야겠다는 생각으로 처음에 접근했다. WA를 받은 이유는 구슬의 시작점과 끝점을 판단하는 코드가 잘못됐기 때문이다.  
-20분을 남기고 정답 코드를 짤 수 있었지만 자유로운 환경이 아니기에 대회를 마쳤다. 이 문제는 Lazy Segtree를 써도 되지만 쓸 필요는 없는 문제이다.  
-업데이트 쿼리가 모두 주어지고 기댓값을 묻는 쿼리가 주어지기 때문에 누적합으로 풀린다. 만약 두 쿼리가 섞여서 나왔다면 정해는 Lazy Segtree일 것이다.
+Lazy Segtree를 써야겠다는 생각으로 처음에 접근했다. WA를 받은 이유는 구슬의 시작점과 끝점을 판단하는 코드가 잘못됐기 때문이다. 20분을 남기고 정답 코드를 짤 수 있었지만 자유로운 환경이 아니기에 대회를 마쳤다.  
+이 문제는 Lazy Segtree를 써도 되지만 쓸 필요는 없는 문제이다. 업데이트 쿼리가 모두 주어지고 기댓값을 묻는 쿼리가 주어지기 때문에 누적합으로 풀린다. 만약 두 쿼리가 섞여서 나왔다면 정해는 Lazy Segtree일 것이다.  
 
+<details>
+    <summary> 소스 코드 </summary>
+    
 ``` c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -244,3 +266,4 @@ int main() {
     }
 } 
 ```
+</details>
