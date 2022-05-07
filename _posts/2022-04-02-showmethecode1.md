@@ -23,7 +23,7 @@ c++에 있는 next_permutation()을 활용하면 쉽게 풀 수 있는 문제이
 next_permutation은 코딩테스트의 순열문제에서 쓸 일이 많으니 익혀두도록 하자 (직접 구현하려면 꽤 시간이 많이 든다.)
 
 <details>
-<summary> 소스 코드 </summary>
+<summary> 소스코드 보기 </summary>
 <div markdown="1">
     
 ~~~ c++
@@ -80,7 +80,7 @@ long long int의 최댓값은 9,223,372,036,854,775,807으로, 범위를 넘어�
 
     
 <details>
-<summary> 소스 코드 </summary>
+<summary> 소스코드 보기 </summary>
 <div markdown="1">
     
 ~~~ c++
@@ -153,7 +153,7 @@ $ P_{i} = 2^i-i-1 $ , $ P_{i+1} = 2 \times P_{i} + i $ 이다.
 
 
 <details>
-<summary> 소스 코드 </summary>
+<summary> 소스코드 보기 </summary>
 <div markdown="1">
     
 ~~~c++

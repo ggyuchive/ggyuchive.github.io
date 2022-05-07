@@ -21,7 +21,7 @@ tags:
 투포인터 느낌으로 풀었다. pnt를 계속 증가시키면서 찾기 때문에 $ O(N) $이다.
 
 <details>
-<summary> 소스 코드 </summary>
+<summary> 소스코드 보기 </summary>
 <div markdown="1">
 
 ~~~ c++
@@ -57,7 +57,7 @@ int main() {
 아래 풀이는 $ O(\lvert S \rvert \lvert T \rvert) $ 에 풀린다. 여기서 배열 a[i]는 T의 i-1번째 문자까지 같은 문자열의 개수이다.   
 
 <details>
-<summary> 소스 코드 </summary>
+<summary> 소스코드 보기 </summary>
 <div markdown="1">
     
 ~~~ c++
@@ -100,7 +100,7 @@ K의 개수가 S의 개수의 2배여야 하므로 K를 1, S를 -2, 나머지를
 즉, 전체 시간복잡도는 $ O(N \log N) $이다. 
 
 <details>
-<summary> 소스 코드 </summary>
+<summary> 소스코드 보기 </summary>
 <div markdown="1">
     
 ~~~ c++
@@ -154,7 +154,7 @@ DFS 역방향 간선이 있을 경우 역방향 간선을 포함하는 노드들
 그 후 큐에 넣은 노드들을 출발점으로 해 backedge를 써서 BFS로 탐색하면 $ O(V+E) $ 로 풀 수 있다.
 
 <details>
-<summary> 소스 코드 </summary>
+<summary> 소스코드 보기 </summary>
 <div markdown="1">
 
 ~~~ c++
@@ -231,7 +231,7 @@ Lazy Segtree를 써야겠다는 생각으로 처음에 접근했다. WA를 받�
 이 문제는 Lazy Segtree를 써도 되지만 쓸 필요는 없는 문제이다. 업데이트 쿼리가 모두 주어지고 기댓값을 묻는 쿼리가 주어지기 때문에 누적합으로 풀린다. 만약 두 쿼리가 섞여서 나왔다면 정해는 Lazy Segtree일 것이다.  
 
 <details>
-<summary> 소스 코드 </summary>
+<summary> 소스코드 보기 </summary>
 <div markdown="1">
     
 ~~~ c++
