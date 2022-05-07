@@ -21,8 +21,9 @@ tags:
 투포인터 느낌으로 풀었다. pnt를 계속 증가시키면서 찾기 때문에 $ O(N) $이다.
 
 <details>
-    <summary> 소스 코드 </summary>
-    
+<summary> 소스 코드 </summary>
+<div markdown="1">
+
 ~~~ c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -44,6 +45,8 @@ int main() {
     for (int i = 0; i < n; i++) cout << ans[i]+1 << ' ';
 }
 ~~~
+
+</div>
 </details>
     
 * * *
