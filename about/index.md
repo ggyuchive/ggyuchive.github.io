@@ -3,8 +3,6 @@ layout: page
 type: about
 ---
 
-### [Github Link](https://github.com/ggyuchive)
-
 ### About  
 
 (2021.05~Current) 대한민국 육군  
